@@ -1,6 +1,5 @@
 import requests
 import pandas as pd
-import numpy as np
 
 ACCESS_TOKEN = <your access token>
 
