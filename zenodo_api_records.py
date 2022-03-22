@@ -8,7 +8,7 @@ ACCESS_TOKEN = 'vf2H4OcPRXU7PzKKIFgkN3BUeoiGkrQEx6cg7lLqQUbECPUfEYwBrZos9X2y'
 response = requests.get('https://zenodo.org/api/records',
                         params={'q': 'synthetic',
                         		'type': 'dataset',
-                        		'access_right': 'open',
+                        		#'access_right': 'open',
                         		#'keywords': ['machine learning'],
                         		'size': 2000,
                         		'access_token': ACCESS_TOKEN})
@@ -28,4 +28,4 @@ df = pd.DataFrame.from_records(lst)
 
 # save to file
 df.columns = ['doi','access_right','title']#,'description']
-df.to_csv('zenodo_open_synth_datasets.csv',index=None)
+df.to_csv('zenodo_synth_datasets.csv',index=None)
