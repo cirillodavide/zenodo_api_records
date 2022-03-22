@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import numpy as np
 
-ACCESS_TOKEN = 'vf2H4OcPRXU7PzKKIFgkN3BUeoiGkrQEx6cg7lLqQUbECPUfEYwBrZos9X2y'
+ACCESS_TOKEN = <your access token>
 
 # query request
 response = requests.get('https://zenodo.org/api/records',
