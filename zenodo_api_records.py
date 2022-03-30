@@ -22,9 +22,9 @@ for hit in dict_data['hits']['hits']:
 	title = hit['metadata']['title']
 	description = hit['metadata']['description']
 
-	lst.append([doi, access_right, title, description])
+	lst.append([doi, access_right, title])#, description])
 df = pd.DataFrame.from_records(lst)
 
 # save to file
-df.columns = ['doi','access_right','title','description']
+df.columns = ['doi','access_right','title']#,'description']
 df.to_csv('zenodo_synth_datasets.csv',index=None)
